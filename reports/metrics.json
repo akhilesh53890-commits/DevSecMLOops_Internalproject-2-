@@ -1,0 +1,92 @@
+{
+  "project": "Heart Disease Risk Prediction",
+  "dataset": "UCI Cleveland Heart Disease",
+  "best_model": "Logistic Regression",
+  "cv_comparison": {
+    "Logistic Regression": {
+      "accuracy_mean": 0.8471088435374149,
+      "accuracy_std": 0.009976921631744011,
+      "precision_mean": 0.8767529146045769,
+      "precision_std": 0.054190324098361047,
+      "recall_mean": 0.783399209486166,
+      "recall_std": 0.045917899546111016,
+      "f1_mean": 0.8245007436109558,
+      "f1_std": 0.006866722884370779,
+      "roc_auc_mean": 0.9024931590148981,
+      "roc_auc_std": 0.01443995119614911
+    },
+    "Random Forest": {
+      "accuracy_mean": 0.8181122448979592,
+      "accuracy_std": 0.030707052733897906,
+      "precision_mean": 0.8172527472527472,
+      "precision_std": 0.04053782620904721,
+      "recall_mean": 0.7826086956521738,
+      "recall_std": 0.09810814927920464,
+      "f1_mean": 0.7947563549926383,
+      "f1_std": 0.04691092916930539,
+      "roc_auc_mean": 0.8968475164127339,
+      "roc_auc_std": 0.02943967909975486
+    },
+    "XGBoost": {
+      "accuracy_mean": 0.780952380952381,
+      "accuracy_std": 0.021490906527022825,
+      "precision_mean": 0.7677703349282297,
+      "precision_std": 0.04467472698260153,
+      "recall_mean": 0.7561264822134388,
+      "recall_std": 0.05644844469705046,
+      "f1_mean": 0.7594183925398248,
+      "f1_std": 0.025798752102184082,
+      "roc_auc_mean": 0.8671238584282062,
+      "roc_auc_std": 0.022678871509221515
+    }
+  },
+  "optuna_best_params": {
+    "l1_ratio": 1.0,
+    "C": 0.38160707363918966
+  },
+  "optuna_best_cv_auc": 0.9094056507099987,
+  "test_metrics": {
+    "accuracy": 0.8852459016393442,
+    "precision": 0.8387096774193549,
+    "recall": 0.9285714285714286,
+    "f1_score": 0.8813559322033898,
+    "roc_auc": 0.9642857142857143,
+    "confusion_matrix": [
+      [
+        28,
+        5
+      ],
+      [
+        2,
+        26
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.9333333333333333,
+        "recall": 0.8484848484848485,
+        "f1-score": 0.8888888888888888,
+        "support": 33.0
+      },
+      "1": {
+        "precision": 0.8387096774193549,
+        "recall": 0.9285714285714286,
+        "f1-score": 0.8813559322033898,
+        "support": 28.0
+      },
+      "accuracy": 0.8852459016393442,
+      "macro avg": {
+        "precision": 0.886021505376344,
+        "recall": 0.8885281385281385,
+        "f1-score": 0.8851224105461393,
+        "support": 61.0
+      },
+      "weighted avg": {
+        "precision": 0.8898995240613432,
+        "recall": 0.8852459016393442,
+        "f1-score": 0.8854311382791517,
+        "support": 61.0
+      }
+    }
+  }
+}
